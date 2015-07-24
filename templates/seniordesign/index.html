@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Matthew Schlue" content="Resume Portfolio">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>Matthew Schlue's Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/home/">Portfolio of Matthew Schlue </a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="/home/">Home</a></li>
+                <li><a href="/resume/">Resume</a></li>
+                <li class="active"><a href="/seniordesign/">Senior Design</a></li>
+                <li><a href="/about/">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--Senior Design Content Here
+    =========================================== -->
+    <div class="container"> 
+     <table class="table"><br /><br /><br /><br />
+      <tr><td>
+        <div align="center"><h1>Senior Design</h1></div>
+      </td><tr>
+      </tr><td>
+        <h2>IScorE - An Automated Cyber Defense Competition Scoring Framework</h2>
+        <hr>
+          <h4> Project Overview </h4>
+            <p>The IScorE project is easily one of the toughest, yet the most rewarding projects I have worked on during my undergraduate degree. I worked with a team of 9 individuals to develop a business model, design the interface, develope the system. Working as the technical lead, My team of three wrote over 10,000 lines of code in a month and a half to complete the project. This new system is now used to monitor and score Iowa State Cyber Defense Competitions (CDCs). Every year the Information Assurance department hosts several competitions for students to practice their cyber security and server administration skills in a simulated real world environment known as <a href="https://www.iac.iastate.edu/wiki/ISEAGE">ISEAGE</a>. Several teams take part in this competition. The blue team, comprised of students, builds the servers and networks that are defended. These blue networks include a mail servers, custom web applications, FTP, RDP, SSH servers, and optionally a firewall. The green team represents normal employees on a network that generate traffic and report on the functionality of the blue team servers. The red team is a group of experienced students and industry professionals that are tasked with hacking into blue team servers. Their goal is to either plant or take flags on the system and score the team accordingly. The white team is tasked with scoring the blue teams based on their network setup documentation and the effectiveness of mitigating the hackers’ break-in attempts.
+            </p>  
+            <!-- <img class="img-rounded" src="static/img/cdclayout.png" alt="CDC Layout"></img><br /> -->
+            <div class="row">
+              <div class="col-lg-6">
+                <img class="img-rounded" src="/static/img/cdclayout.png" alt="layout"> 
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img width="455" class="img-rounded" src="/static/img/devteam.jpg" alt="project team">
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <p>Before the IScorE system was implemented, a competition was scored manually through the use of paper documentation and manual entry into excel documents. This often led to human error in reporting and delayed scoring due to the officials being needed for technical help or the lack of people available to help gather and input information. Our project group’s system included the following key functionality that was able to solve this problem.
+            </p>
+            <li>Real Time Monitoring of competition servers to track and report server up time.</li>
+            <li>GUI interface for green to quickly score and track blue team’s system functionality.</li>
+            <li>GUI interface for red to submit flags taken from blue servers and report systems compromised</li>
+            <li>Administrative interface for white team giving them the ability to quickly change/update any aspect of the system.</li>
+            <li>Blue team portal for uploading documentation, intrusion detection reports, and tracking their teams scores.</li>
+            <li>Identity management system with individual logins, and encrypted session cookies to protect from unauthorized access.</li>
+            <li>Robust data analytics and report generation to show blue teams their score, progress, and allow them to compare scores against other competitors.</li>
+            <p>During two competition our team tracked how the administrative team spent their time, one using our system and one without it. By meeting our goal of automated scoring and competition network monitoring, administrators would be able to spend more time helping and teaching students. The results we found were surprising and a great testament to the success of the IScorE system. The graphs below representing the collected data demonstrate this.</p>
+            </td></tr>
+            <tr><td>
+            <!-- Two columns for ISCORE pics-->
+            <div class="row">
+              <div class="col-lg-6">
+                <div align="center"><h2>Before IScorE</h2> </div>
+                <img width="500" class="img-rounded" src="/static/img/before.png" alt="Before Implementation"> 
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <div align="center"><h2>After IScorE</h2></div>
+                <img width="425" class="img-rounded" src="/static/img/after.png" alt="After Implementation">
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </td></tr><tr><td>
+             <p>As you can see, our implementation of the backend systems monitoring and automated scoring produced an enormous improvement in the amount of time that the white team members were able to help and teach the blue teams. Our software was also able to reduce the number of people needed on a specific team to be efficient. The green team simulating normal network traffic and checking functionality typically needed 10-12 people to score the teams, but with the new system this we were able to reduce this to only needing three green team members. The white team also spent far less time compiling scores and reports and were able to do more technical work, help teams, and enjoy the competition.</p>
+             <p>Overall this was a very exciting, unique project to work on. Our entire team shared the same work ethic, which motivated me even more to work countless hours, including several late nights that turned into early mornings. I feel one of the greatest strengths of our project was the outstanding collaboration among our team members and strong support from our stake holder, ISEAGE.</p>
+
+
+
+
+              <!--
+              <div id="metric-heading" align="center"> 
+                 <h3>Before</h3>
+               </td>
+               <td>
+                 <h3>After</h3>  
+              </div>
+            </td></tr>
+            <tr><td>  
+                <img width="500" class="img-rounded" src="static/img/before.png">
+              </td>
+              <td>
+                <img width="425" class="img-rounded" src="static/img/after.png">
+            </td></tr>
+            <tr><td>  -->
+
+    </div>
+    <!--END RESUME CONTENT
+    =========================================== -->
+
+      <!-- FOOTER -->
+      <!--<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+      -->
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>

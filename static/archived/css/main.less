@@ -1,0 +1,48 @@
+@import "less/mixins.less";
+
+@pink: #be1a8d;
+
+.custom-highlight{
+    background: @pink;
+    color: #fff;
+    text-shadow: -1px 1px 1px darken(@pink, 15%);
+}
+
+/* Apply custom highlight */
+::-moz-selection{ .custom-highlight; }
+::selection { .custom-highlight; }
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper object,
+.videoWrapper embed,  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.divider {
+    width:500px;
+    text-align:center;
+}
+
+hr {
+    border-color: #999999;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.list-group-item {
+    text-align: center;
+}

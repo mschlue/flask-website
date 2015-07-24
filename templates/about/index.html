@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Matthew Schlue" content="Resume Portfolio">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>Matthew Schlue's Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/home/">Portfolio of Matthew Schlue </a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a href="/home/">Home</a></li>
+                <li><a href="/resume/">Resume</a></li>
+                <li><a href="/seniordesign/">Senior Design</a></li>
+                <li class="active"><a href="/about/">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--RESUME CONTENT HERE 
+    =========================================== -->
+    <div class="container"> 
+     <table class="table"><br /><br /><br /><br />
+      <tr><td>
+        <div align="center"><h1>Matthew Schlue</h1></div>
+      </td></tr>
+      <tr><td>
+        <h2>History of my site</h2>
+        <hr>
+          <h4>Version 1.0</h4>
+            <p>For the first build of my webserver, I wanted to build and engineer every aspect of it.  I had very minimal hardware to work with when starting this project. It included a very outdated desktop, containing a 1.2 GHZ single core processor, and 256MB of ram. My choice with such little processing power was to use FreeBSD. The server followed a “FAMP” model which utilizing apache2.2 for the web server, php5 for dynamic webpages, and MYSQL as the backend. On top of this I ran BIND for DNS, and created a BASH script to generate zone files and subdomains as needed. </p>
+          <h4>Version 2.0</h4>
+            <p>After completing my undergraduate degree and starting Grad school I felt it was time update the site, both in terms of content and the architecture powering it. This site has been coded with HTML, Javascript, and CSS.  The code is running on top of Nginx and <a href="http://fedoraproject.org/">Fedora</a> 20.  To boost performance and security <a href="https://www.cloudflare.com/">Cloudflare</a> is being used as the CDN, DNS provider, SSL certificate issuer, and threat mitigation platform.  All site requests are being piped through Cloudflare's filters before reaching my site. As a fun part of this revision I have tweaked the hardware platform and code to be able to serve thousands of requests per second, while accurately logging traffic in <a href="http://www.splunk.com/">Splunk</a> 
+         <h4>Version 3.0</h4>
+           <p>Starting out my professional career in security and software development, I thought it would again be a good time to give my personal site a face-lift. Currenly I am working on a project that involves a signifigant ammount of coding and security for a web application written on the Flask framework. In line with the other times I have updated my site this is a very signifigant change in the technology stack powering the site. As a devops engineer we are taught to think of insfrastructure as code. To be successful we must be apply to rapidly deploy and scale our applications in a very stable and reproduceable manner. </p>
+           <p>With this philosophy in mind version 3.0 of my site was created using the <a href="http://flask.pocoo.org/">Flask</a> framwork. Jinja templating allows a signifigant reduction in the amount of code required to render the site. The entire site has been packed into a pip installable package that is built into a <a href="https://www.docker.com/">Docker</a> container. this simple container is deployed to a cloud provider quickly using an API call. Similiar with the previous version of my site, <a href="https://www.cloudflare.com/">Cloudflare</a> is being used to boost performance and enhance security.</p>
+
+    </div>
+    <!--END RESUME CONTENT
+    =========================================== -->
+
+      <!-- FOOTER -->
+      <!--<footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+      -->
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>
