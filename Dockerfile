@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
 
 ADD . /flask-website
 
-RUN pip install pip==6.0.0
-RUN pip install -r /flask-website/requirements.txt
+RUN pip install pip==7.1.2
+RUN pip install /flask-website/.
 
 EXPOSE 5000
-CMD ["python", "/flask-website/main.py"]
+CMD ["webserver"]

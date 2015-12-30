@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, redirect, url_for, send_file
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -21,19 +21,19 @@ def index():
 @app.route('/resume/')
 def resume():
     """Render the resume page."""
-    return render_template('/resume/index.html')
+    return render_template('/resume.html')
 
 
 @app.route('/seniordesign/')
 def seniordesign():
     """Render the senior design page."""
-    return render_template('seniordesign/index.html')
+    return render_template('seniordesign.html')
 
 
 @app.route('/about/')
 def about():
     """Render the about site page."""
-    return render_template('about/index.html')
+    return render_template('about.html')
 
 
 @app.route('/favicon.ico')
@@ -48,6 +48,6 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 
-if __name__ == '__main__':
+def run_server():
     app.run(host='0.0.0.0')
 
