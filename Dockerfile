@@ -1,7 +1,8 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 MAINTAINER Matthew Schlue isuschlue@gmail.com
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get dist-upgrade -y
+RUN apt-get install -y \
     python-pip \
     python-dev
 
